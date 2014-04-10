@@ -1,0 +1,49 @@
+#  Pseudo code for Procedural Blackjack game
+
+- Ask for user's name
+- Store it for later
+
+- Ask how much money user wants to use
+- Store and track gains and losses with it
+
+- Create an array of cards with a variable number of decks for the "shoe"
+- Shuffle the cards
+
+- Ask user for first bet
+- Deal two cards to user and dealer (pop?)
+
+- Show the user their cards
+- Calculate the score of the user's cards and display
+
+Enter Player Hit-Stay Loop:
+
+  - Ask if they want to "hit" or "stay"
+
+  if Hit:
+    Deal them one more card
+    Calculate card score
+
+    if score == 21:
+      Player Wins!  Need to exit loop here and start another round
+    else:
+      Display them to the user
+
+  if Stay:
+    Exit loop
+
+Calculate the card score and display to user
+
+Display Dealer's cards
+
+Enter Dealer Hit Loop:
+
+  Calculate dealer's score
+  
+  if Score <= 17:
+    Hit (Deal another card to dealer's hand)
+
+  elsif Dealer Score == 21:
+    Dealer wins!  (and player loses)
+
+  elsif Dealer Score > 21:
+    Dealer loses!  (and player wins)
