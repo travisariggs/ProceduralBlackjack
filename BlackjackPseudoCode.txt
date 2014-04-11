@@ -9,41 +9,60 @@
 - Create an array of cards with a variable number of decks for the "shoe"
 - Shuffle the cards
 
-- Ask user for first bet
-- Deal two cards to user and dealer (pop?)
+Enter While Loop for a Hand of Blackjack:
 
-- Show the user their cards
-- Calculate the score of the user's cards and display
+    - Check to see if there are at least N number of cards remaining in deck
+    if not, need to regenerate a new set of shuffled decks
 
-Enter Player Hit-Stay Loop:
+    - Ask user for bet
 
-  - Ask if they want to "hit" or "stay"
+    - Deal two cards to user and dealer (pop?)
+        Note:  Dealer shows the first card, but hides the second from user
 
-  if Hit:
-    Deal them one more card
-    Calculate card score
+    - Show the user their cards
+    - Calculate the score of the user's cards and display
 
-    if score == 21:
-      Player Wins!  Need to exit loop here and start another round
-    else:
-      Display them to the user
+    Enter Player Hit-Stay Loop:
 
-  if Stay:
-    Exit loop
+      - Ask if they want to "hit" or "stay"
 
-Calculate the card score and display to user
+      if Hit:
+        Deal them one more card
+        Calculate card score
 
-Display Dealer's cards
+        if score == 21:
+          Player Wins!  Need to exit loop here and start another round
+        else:
+          Display them to the user
 
-Enter Dealer Hit Loop:
+      if Stay:
+        Exit loop
 
-  Calculate dealer's score
-  
-  if Score <= 17:
-    Hit (Deal another card to dealer's hand)
+    Calculate the card score and display to user
 
-  elsif Dealer Score == 21:
-    Dealer wins!  (and player loses)
+    Display All Dealer's cards
 
-  elsif Dealer Score > 21:
-    Dealer loses!  (and player wins)
+    Enter Dealer Hit Loop:
+
+      Calculate dealer's score
+
+      if Score <= 17:
+        Hit (Deal another card to dealer's hand)
+
+      elsif Dealer Score == 21:
+        Dealer wins!  (and player loses)
+
+      elsif Dealer Score > 21:
+        Dealer loses!  (and player wins)
+
+
+    When Someone Wins:
+        Reset things for the next hand
+        - Clear User and Dealer's hands
+        - Update user's total money
+
+        Display User's money total
+
+        Ask if user wants to play another round
+         if No, display amount of gain/loss and exit program
+         if Yes, continue in "Hand" loop
