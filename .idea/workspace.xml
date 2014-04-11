@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f66b79a-2125-4548-ba65-5dc1dbb627c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blackjack.rb" afterPath="$PROJECT_DIR$/blackjack.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_blackjack.rb" afterPath="$PROJECT_DIR$/test_blackjack.rb" />
     </list>
     <ignored path="ProceduralBlackjack.iws" />
@@ -36,7 +35,7 @@
           <file leaf-file-name="blackjack.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blackjack.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="28" selection-start="360" selection-end="360" vertical-scroll-proportion="-1.2747875" vertical-offset="1185" max-vertical-offset="3810">
+                <state line="19" column="28" selection-start="360" selection-end="360" vertical-scroll-proportion="0.4036827" vertical-offset="0" max-vertical-offset="3810">
                   <folding />
                 </state>
               </provider>
@@ -67,7 +66,7 @@
           <file leaf-file-name="test_blackjack.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test_blackjack.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="55" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-0.084337346" vertical-offset="888" max-vertical-offset="1635">
+                <state line="77" column="17" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.3574297" vertical-offset="888" max-vertical-offset="1635">
                   <folding />
                 </state>
               </provider>
@@ -467,7 +466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_blackjack.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-0.084337346" vertical-offset="888" max-vertical-offset="1635">
+        <state line="77" column="17" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.3574297" vertical-offset="888" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>

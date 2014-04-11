@@ -75,7 +75,7 @@ end
 
 class TestCreateShoe < Test::Unit::TestCase
 
-  def test_1_decks_length
+  def test_1_deck_length
     shoe = create_shoe(1)
     assert_equal(52, shoe.length)
   end
