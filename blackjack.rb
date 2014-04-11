@@ -27,6 +27,8 @@ def calculate_hand(hand)
 
   end
 
+  return total
+
 end
 
 def shuffle_cards(card_array)
@@ -118,9 +120,10 @@ def hand_status?(hand_total)
 
 end
 
-#@@@@@@@@@@@ MAIN METHOD @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#  I'm doing this to try to get unit testing working...
-def main
+
+
+########## Main Program ##################
+if __FILE__ == $0
 
   # Ask who's playing
   say " "*10 + "Welcome to Blackjack!"
@@ -128,20 +131,20 @@ def main
 
   user = gets.chomp
 
-# Be friendly...even though you're going to take their money
+  # Be friendly...even though you're going to take their money
   say "Hello #{user}!  Nice to meet you!"
 
-# How much money will they start with?
+  # How much money will they start with?
   say "How much money would you like to convert?"
 
   money = gets.chomp.to_i
   starting_money = money
 
-# Fill the card shoe with shuffled cards
+  # Fill the card shoe with shuffled cards
   shoe = create_shoe(NUM_OF_DECKS)
 
 
-# Loop through each hand that the user wants to play
+  # Loop through each hand that the user wants to play
   while true
 
     # Make sure we have enough cards left in the shoe
@@ -231,14 +234,10 @@ def main
 
   end
 
-# Say goodbye!
+  # Say goodbye!
   say "Thanks for playing #{user}! Come back soon!"
 
-
 end
-
-########## Main Program ##################
-main
 
 
 

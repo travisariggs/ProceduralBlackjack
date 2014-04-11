@@ -13,7 +13,7 @@ class MyTest < Test::Unit::TestCase
 
     the_hand = [
       { value: "King", suit: "Spade" },
-      { value: 8,      suit: "Heart" }
+      { value:      8, suit: "Heart" }
     ]
 
     assert_equal(18, calculate_hand(the_hand))
@@ -23,11 +23,47 @@ class MyTest < Test::Unit::TestCase
   def test_calculate_hand_2
 
     the_hand = [
-        { value: "Jack",  suit: "Club"  },
+        { value:  "Jack", suit: "Club"  },
         { value: "Queen", suit: "Heart" }
     ]
 
     assert_equal(20, calculate_hand(the_hand))
+
+  end
+
+  def test_calculate_hand_ace_1
+
+    the_hand = [
+        { value:    10, suit: "Club"  },
+        { value: "Ace", suit: "Heart" }
+    ]
+
+    assert_equal(21, calculate_hand(the_hand))
+
+  end
+
+  def test_calculate_hand_ace_2
+
+    the_hand = [
+        { value: "Ace", suit: "Heart"   },
+        { value:     5, suit: "Diamond" },
+        { value:    10, suit: "Club"    },
+    ]
+
+    assert_equal(16, calculate_hand(the_hand))
+
+  end
+
+  def test_calculate_hand_ace_3
+
+    the_hand = [
+        { value: "Ace", suit: "Heart"   },
+        { value: "Ace", suit: "Diamond" },
+        { value:    10, suit: "Club"    },
+        { value:     7, suit: "Club"    }
+    ]
+
+    assert_equal(18, calculate_hand(the_hand))
 
   end
 
