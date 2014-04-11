@@ -11,13 +11,13 @@ def calculate_hand(hand)
 
   hand.each do |card|
 
-    if card[:value] == "King"
+    if card[:value] == 'King'
       total += 10
-    elsif card[:value] == "Queen"
+    elsif card[:value] == 'Queen'
       total += 10
-    elsif card[:value] == "Jack"
+    elsif card[:value] == 'Jack'
       total += 10
-    elsif card[:value] == "Ace"
+    elsif card[:value] == 'Ace'
       next
     else
       total += card[:value]
@@ -27,7 +27,7 @@ def calculate_hand(hand)
 
   end
 
-  return total
+  total
 
 end
 
@@ -43,9 +43,9 @@ def create_shoe(decks)
 
   decks.times do
 
-    [ "Club", "Diamond", "Heart", "Spade"].each do |suit|
+    [ 'Club', 'Diamond', 'Heart', 'Spade'].each do |suit|
 
-      ((2..10).to_a + ["Jack", "Queen", "King", "Ace"]).each do |card|
+      ((2..10).to_a + ['Jack', 'Queen', 'King', 'Ace']).each do |card|
 
         # Insert a hash of the card value and the suit
         the_shoe << {suit: suit, value: card}
@@ -76,11 +76,11 @@ def get_wager(total_money)
   # Make sure we keep asking until we get a valid bet
   while true
 
-    say "How much would you like to bet?"
+    say 'How much would you like to bet?'
     bet = gets.chomp
 
     if bet.to_i == 0
-      say "You have to bet something"
+      say 'You have to bet something'
     elsif bet.to_i > total_money
       puts "You don't have that much money"
       puts "You can bet a max of #{total_money}"
@@ -94,7 +94,7 @@ end
 
 def show_cards(hand, mask=false)
 
-  puts "Your hand is:"
+  puts 'Your hand is:'
 
   hand.each do |card|
     unless mask
@@ -111,11 +111,11 @@ end
 def hand_status?(hand_total)
 
   if hand_total == 21
-    status = "Blackjack"
+    status = 'Blackjack'
   elsif hand_total > 21
-    status = "Bust"
+    status = 'Bust'
   else
-    status = "Playing"
+    status = 'Playing'
   end
 
 end
@@ -126,7 +126,7 @@ end
 if __FILE__ == $0
 
   # Ask who's playing
-  say " "*10 + "Welcome to Blackjack!"
+  say ' '*10 + 'Welcome to Blackjack!'
   say "What's your name?"
 
   user = gets.chomp
@@ -135,7 +135,7 @@ if __FILE__ == $0
   say "Hello #{user}!  Nice to meet you!"
 
   # How much money will they start with?
-  say "How much money would you like to convert?"
+  say 'How much money would you like to convert?'
 
   money = gets.chomp.to_i
   starting_money = money
@@ -174,13 +174,13 @@ if __FILE__ == $0
 
     user_status = hand_status?(user_total)
 
-    # Loop through user "hits"
-    while user_status == "Playing"
+    # Loop through user 'hits'
+    while user_status == 'Playing'
 
       say "Would you like a hit, #{user}? (y/n)"
       response = gets.chomp.downcase
 
-      if response == "y"
+      if response == 'y'
 
         user_hand << shoe.pop
 
@@ -192,7 +192,7 @@ if __FILE__ == $0
         # Get user status
         user_status = hand_status?(user_total)
 
-      elsif response == "n"
+      elsif response == 'n'
 
         break
 
@@ -205,10 +205,10 @@ if __FILE__ == $0
     end
 
     # How did the user do?
-    if user_status == "Blackjack"
-      say "Blackjack baby!"
+    if user_status == 'Blackjack'
+      say 'Blackjack baby!'
       money += wager * 1.5
-    elsif user_status == "Bust"
+    elsif user_status == 'Bust'
       say "Sorry #{user}...you busted"
       money -= wager
     else
@@ -221,10 +221,6 @@ if __FILE__ == $0
     # Show results of betting
     say "#{user}, your money remaining: $#{money}"
 
-    # Clean things up for the next hand
-    user_hand = []
-    dealer_hand = []
-
     say "Would you like to play another round, #{user}? (y/n)"
     again = gets.chomp.downcase
 
@@ -232,6 +228,15 @@ if __FILE__ == $0
       break
     end
 
+  end
+
+  # Tell the user how they fared
+  say "You started with $#{starting_money} and ended with $#{money}."
+
+  if money > starting_money
+    say "Congratulations, #{user}!"
+  else
+    say 'Sorry about your luck...'
   end
 
   # Say goodbye!

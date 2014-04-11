@@ -30,13 +30,22 @@
     <favorites_list name="ProceduralBlackjack" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.24609053">
+    <splitter split-orientation="horizontal" split-proportion="0.39506173">
       <split-first>
         <leaf>
-          <file leaf-file-name="BlackjackPseudoCode.txt" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="blackjack.rb" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blackjack.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19" column="28" selection-start="360" selection-end="360" vertical-scroll-proportion="-1.2747875" vertical-offset="1185" max-vertical-offset="3810">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BlackjackPseudoCode.txt" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BlackjackPseudoCode.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="52" selection-start="440" selection-end="440" vertical-scroll-proportion="-0.18238993" vertical-offset="297" max-vertical-offset="1110">
+                <state line="21" column="11" selection-start="606" selection-end="606" vertical-scroll-proportion="-9.0" vertical-offset="297" max-vertical-offset="1110">
                   <folding />
                 </state>
               </provider>
@@ -49,7 +58,7 @@
           <file leaf-file-name="blackjack.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blackjack.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="14" selection-start="479" selection-end="479" vertical-scroll-proportion="-15.5" vertical-offset="1" max-vertical-offset="3735">
+                <state line="232" column="32" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0" vertical-offset="1473" max-vertical-offset="3810">
                   <folding />
                 </state>
               </provider>
@@ -58,7 +67,7 @@
           <file leaf-file-name="test_blackjack.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test_blackjack.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="68" column="0" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.7256098" vertical-offset="663" max-vertical-offset="1155">
+                <state line="55" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-0.084337346" vertical-offset="888" max-vertical-offset="1635">
                   <folding />
                 </state>
               </provider>
@@ -150,7 +159,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RubyExercises/Lesson1/test_simple_script.rb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blackjack.rb" />
   </component>
   <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'MyTest': ProceduralBlackjack">
     <configuration default="false" name="blackjack" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -379,7 +388,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24938272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17283951" sideWeight="0.4990403" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -389,24 +398,24 @@
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20164609" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="190" y="122" width="1057" height="641" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20164609" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="190" y="122" width="1057" height="641" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32947233" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28387097" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17283951" sideWeight="0.5009597" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24938272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17283951" sideWeight="0.4990403" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -428,13 +437,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BlackjackPseudoCode.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="52" selection-start="440" selection-end="440" vertical-scroll-proportion="-0.18238993" vertical-offset="297" max-vertical-offset="1110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../RubyExercises/Lesson1/test_simple_script.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="18" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
@@ -449,16 +451,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BlackjackPseudoCode.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="11" selection-start="606" selection-end="606" vertical-scroll-proportion="-9.0" vertical-offset="297" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blackjack.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="14" selection-start="479" selection-end="479" vertical-scroll-proportion="-15.5" vertical-offset="1" max-vertical-offset="3735">
+        <state line="232" column="32" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0" vertical-offset="1473" max-vertical-offset="3810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_blackjack.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.7256098" vertical-offset="663" max-vertical-offset="1155">
+        <state line="55" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-0.084337346" vertical-offset="888" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
