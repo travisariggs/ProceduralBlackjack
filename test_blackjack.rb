@@ -51,7 +51,19 @@ class TestCalculateHand < Test::Unit::TestCase
         { value:    10, suit: 'Club'    },
         { value:     7, suit: 'Club'    }
     ]
-    assert_equal(18, calculate_hand(the_hand))
+    assert_equal(19, calculate_hand(the_hand))
+  end
+
+  def test_ace_ace_ace_ace_10_9
+    the_hand = [
+        { value: 'Ace', suit: 'Heart'   },
+        { value: 'Ace', suit: 'Diamond' },
+        { value: 'Ace', suit: 'Spade'   },
+        { value: 'Ace', suit: 'Club'    },
+        { value:    10, suit: 'Club'    },
+        { value:     9, suit: 'Heart'   }
+    ]
+    assert_equal(23, calculate_hand(the_hand))
   end
 
 end
@@ -67,7 +79,38 @@ class TestShuffle < Test::Unit::TestCase
 
   def test_length
     shoe = create_shoe(2)
-    assert(false)
+    assert_equal(104, shoe.length)
+  end
+
+  def test_shuffle_array
+    an_array = (1..100).to_a
+    assert_not_equal(an_array, shuffle_cards(an_array))
+  end
+
+  def test_shuffled_shoe
+
+    a_shoe = []
+
+    # Create a 2-deck ordered shoe of cards
+    2.times do
+
+      [ 'Club', 'Diamond', 'Heart', 'Spade'].each do |suit|
+
+        ((2..10).to_a + ['Jack', 'Queen', 'King', 'Ace']).each do |card|
+
+          # Insert a hash of the card value and the suit
+          a_shoe << {suit: suit, value: card}
+
+        end
+
+      end
+
+    end
+
+    shuffled_shoe = create_shoe(2)
+
+    assert_not_equal(a_shoe, shuffled_shoe)
+
   end
 
 end
@@ -79,6 +122,8 @@ class TestCreateShoe < Test::Unit::TestCase
     shoe = create_shoe(1)
     assert_equal(52, shoe.length)
   end
+
+
 
 end
 
